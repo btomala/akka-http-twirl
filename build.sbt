@@ -1,6 +1,12 @@
+net.virtualvoid.sbt.graph.Plugin.graphSettings
+
 name := "akka-http-twirl"
 
 scalaVersion := "2.11.6"
+
+organization := "btomala"
+
+licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0"))
 
 val akkaHttpV  = "1.0-RC3"
 val scalaTestV = "2.2.5"
