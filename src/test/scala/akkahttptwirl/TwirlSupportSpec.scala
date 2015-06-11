@@ -12,7 +12,7 @@ import scala.concurrent.duration.DurationInt
 
 
 
-class TwirlMarshallingSpec extends WordSpec with TwirlMarshalling with Matchers with BeforeAndAfterAll {
+class TwirlSupportSpec extends WordSpec with TwirlSupport with Matchers with BeforeAndAfterAll {
   import stub.Foo
 
   val foo = Foo("Bar")

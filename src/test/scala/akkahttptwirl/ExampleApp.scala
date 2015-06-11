@@ -24,7 +24,7 @@ object ExampleApp {
   }
 
   def route(implicit ec: ExecutionContext, mat: FlowMaterializer) = {
-    import TwirlMarshalling._
+    import TwirlSupport._
 
     path("html") {
       get {

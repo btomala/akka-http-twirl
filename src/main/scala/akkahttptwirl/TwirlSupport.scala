@@ -5,9 +5,9 @@ import akka.http.scaladsl.model.MediaTypes._
 import akka.http.scaladsl.model.MediaType
 import play.twirl.api.{ Xml, Txt, Html }
 
-object TwirlMarshalling extends TwirlMarshalling
+object TwirlSupport extends TwirlSupport
 
-trait TwirlMarshalling {
+trait TwirlSupport {
 
   /** Serialize Twirl `Html` to `text/html`. */
   implicit val twirlHtmlMarshaller = twirlMarshaller[Html](`text/html`)
