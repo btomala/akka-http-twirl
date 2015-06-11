@@ -1,14 +1,12 @@
 name := "akka-http-twirl"
 
-version := "0.1"
-
 scalaVersion := "2.11.6"
 
 val akkaHttpV  = "1.0-RC3"
-val scalaTestV = "2.2.4"
+val scalaTestV = "2.2.5"
 val playTwirlV = "1.1.1"
 
-lazy val `akka-http-twirl` = (project in file(".")).enablePlugins(SbtTwirl)
+lazy val `akka-http-twirl` = (project in file(".")).enablePlugins(SbtTwirl, GitVersioning)
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http-experimental"          % akkaHttpV,
