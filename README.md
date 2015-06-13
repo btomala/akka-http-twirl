@@ -13,13 +13,17 @@ depend on akka-http version 1.0-RC3
 
 Don't forget add twirl plugin.
 
-```scala plugins.sbt 
+plugins.sbt
+```scala
 addSbtPlugin("com.typesafe.sbt"  % "sbt-twirl"            % "1.1.1")
 ```
 
-```scala build.sbt
+build.sbt
+```scala 
 resolvers += "Bartek's repo at Bintray" at "https://dl.bintray.com/btomala/maven"
+
 lazy val myProject = (project in file(".")).enablePlugins(SbtTwirl)
+
 libraryDependencies += "btomala" %% "akka-http-twirl" % "lastVersion"
 ```
 
