@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/btomala/akka-http-twirl.svg?branch=master)](https://travis-ci.org/btomala/akka-http-twirl)
 [![Download](https://api.bintray.com/packages/btomala/maven/akka-http-twirl/images/download.svg) ](https://bintray.com/btomala/maven/akka-http-twirl/_latestVersion)
 
-# akka-http-json #
+# akka-http-twirl #
 
 Base on [spray/spray](https://github.com/spray/spray/blob/master/spray-httpx/src/main/scala/spray/httpx/TwirlSupport.scala) `TwirlSupport`
 
@@ -9,7 +9,7 @@ akka-http-twirl provides Twirl `Xml`, `Html` and `Txt` file marshalling support 
 
 ## Installation
 
-depend on akka-http version 1.0-RC3
+depend on akka-http version 1.0
 
 Don't forget add twirl plugin.
 
