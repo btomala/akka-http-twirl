@@ -8,7 +8,7 @@ organization := "btomala"
 
 licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0"))
 
-val akkaHttpV  = "1.0-RC3"
+val akkaHttpV  = "1.0"
 val scalaTestV = "2.2.5"
 val playTwirlV = "1.1.1"
 

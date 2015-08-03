@@ -3,7 +3,7 @@ package akkahttptwirl
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.server.Directives._
-import akka.stream.{ActorFlowMaterializer, FlowMaterializer}
+import akka.stream.{ActorMaterializer,Materializer}
 import stub.Foo
 
 import scala.concurrent.ExecutionContext
@@ -13,7 +13,7 @@ object ExampleApp {
 
   def main(args: Array[String]): Unit = {
     implicit val system = ActorSystem()
-    implicit val mat = ActorFlowMaterializer()
+    implicit val mat = ActorMaterializer()
     import system.dispatcher
 
     Http().bindAndHandle(route, "127.0.0.1", 8080)
@@ -23,7 +23,7 @@ object ExampleApp {
     system.awaitTermination()
   }
 
-  def route(implicit ec: ExecutionContext, mat: FlowMaterializer) = {
+  def route(implicit ec: ExecutionContext, mat: Materializer) = {
     import TwirlSupport._
 
     path("html") {
