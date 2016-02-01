@@ -9,7 +9,7 @@ akka-http-twirl provides Twirl `Xml`, `Html` and `Txt` file marshalling support 
 
 ## Installation
 
-depend on akka-http version 1.0
+depend on akka-http version 2.0.3
 
 Don't forget add twirl plugin.
 

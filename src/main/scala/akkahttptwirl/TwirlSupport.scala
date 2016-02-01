@@ -2,7 +2,7 @@ package akkahttptwirl
 
 import akka.http.scaladsl.marshalling.{Marshaller, ToEntityMarshaller}
 import akka.http.scaladsl.model.MediaTypes._
-import akka.http.scaladsl.model.ContentType
+import akka.http.scaladsl.model.MediaType
 import play.twirl.api.{ Xml, Txt, Html }
 
 object TwirlSupport extends TwirlSupport
@@ -19,7 +19,7 @@ trait TwirlSupport {
   implicit val twirlXmlMarshaller = twirlMarshaller[Xml](`text/xml`)
 
   /** Serialize Twirl formats to `String`. */
-  protected def twirlMarshaller[A <: AnyRef: Manifest](contentType: ContentType): ToEntityMarshaller[A] =
+  protected def twirlMarshaller[A <: AnyRef: Manifest](contentType: MediaType): ToEntityMarshaller[A] =
     Marshaller.StringMarshaller.wrap(contentType)(_.toString)
 
 }
