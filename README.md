@@ -9,13 +9,13 @@ akka-http-twirl provides Twirl `Xml`, `Html` and `Txt` file marshalling support 
 
 ## Installation
 
-depend on akka-http version 2.0.3
+depend on akka-http version 10.0.1
 
 Don't forget add twirl plugin.
 
 plugins.sbt
 ```scala
-addSbtPlugin("com.typesafe.sbt"  % "sbt-twirl"            % "1.1.1")
+addSbtPlugin("com.typesafe.sbt"  % "sbt-twirl"            % "1.3.0")
 ```
 
 build.sbt
